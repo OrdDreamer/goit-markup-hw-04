@@ -211,9 +211,11 @@ body {
 /* =============== Hero =============== */
 .hero {
   background-color: var(--dark-background-color);
-  background-image: linear-gradient(#2f303a80, #2f303a80), url(../images/hero/background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -556,6 +558,12 @@ body {
 
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-content-wrapper {
