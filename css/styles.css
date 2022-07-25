@@ -7,6 +7,7 @@
   --secondary-text-color-theme-light: #757575;
   --accent-color: #2196f3;
   --dark-background-color: #2f303a;
+  --default-icon-color: #afb1b8;
 }
 
 h1,
@@ -98,7 +99,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
+  fill: var(--default-icon-color);
 }
 
 .social-list-item-link:hover {
@@ -211,7 +212,10 @@ body {
 
 /* =============== Hero =============== */
 .hero {
-  background: var(--dark-background-color);
+  background-color: var(--dark-background-color);
+  background-image: linear-gradient(#2f303a80, #2f303a80), url(../images/hero/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -378,6 +382,48 @@ body {
 }
 
 /* =============== /Team =============== */
+
+/* =============== Clients =============== */
+.clients-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-theme-light);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients-item-link {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--default-icon-color);
+  fill: var(--default-icon-color);
+}
+
+.clients-item-link:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-item-icon {
+  display: block;
+  width: 106px;
+  height: 60px;
+  margin: 0 auto;
+}
+/* =============== /Clients =============== */
 
 /* =============== Foter =============== */
 .page-footer {
