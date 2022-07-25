@@ -80,7 +80,6 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
-
 /* =============== /Components =============== */
 
 /* =============== Header =============== */
@@ -153,6 +152,7 @@ body {
 .contact-phone-number-theme-light,
 .contact-email-theme-light {
   color: var(--secondary-text-color-theme-light);
+  fill: var(--secondary-text-color-theme-light);
   font-weight: 500;
 }
 
@@ -161,8 +161,22 @@ body {
 .contact-email-theme-light:hover,
 .contact-email-theme-light:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
+.contact-email-theme-light,
+.contact-phone-number-theme-light {
+  display: flex;
+  align-items: center;
+}
+
+.contact-mail-icon,
+.contact-phone-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
 /* =============== /Header =============== */
 
 /* =============== Hero =============== */
@@ -224,6 +238,18 @@ body {
 
 .benefits-item {
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.benefits-item-icon-container {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits-item-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .benefits-item-title {
