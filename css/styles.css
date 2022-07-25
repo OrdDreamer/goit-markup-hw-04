@@ -84,8 +84,6 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: center;
-  margin: 16px auto 0;
 }
 
 .social-list-item:not(:last-child) {
@@ -381,6 +379,11 @@ body {
   color: var(--secondary-text-color-theme-light);
 }
 
+.team-social-list {
+  justify-content: center;
+  margin: 16px auto 0;
+}
+
 /* =============== /Team =============== */
 
 /* =============== Clients =============== */
@@ -432,6 +435,15 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-main {
+  margin-right: 70px;
+}
+
 .logo-theme-dark,
 .logo-theme-dark:link,
 .logo-theme-dark:visited,
@@ -472,6 +484,23 @@ body {
 .contact-email-theme-dark:hover,
 .contact-email-theme-dark:focus {
   color: var(--primary-text-color-theme-dark);
+}
+
+.footer-social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-dark);
+}
+
+.footer-social-list {
+  margin-top: 20px;
+}
+
+.footer-social-list-item-link {
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* =============== /Foter =============== */
