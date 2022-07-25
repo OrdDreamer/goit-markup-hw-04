@@ -104,11 +104,6 @@ body {
   background-color: var(--accent-color);
   fill: #fff;
 }
-
-.social-list-item-icon {
-  width: 20px;
-  height: 20px;
-}
 /* =============== /Components =============== */
 
 /* =============== Header =============== */
@@ -202,8 +197,6 @@ body {
 .contact-mail-icon,
 .contact-phone-icon {
   display: block;
-  width: 16px;
-  height: 16px;
   margin-right: 10px;
 }
 /* =============== /Header =============== */
@@ -279,11 +272,6 @@ body {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.benefits-item-icon {
-  width: 70px;
-  height: 70px;
 }
 
 .benefits-item-title {
@@ -424,8 +412,6 @@ body {
 
 .clients-item-icon {
   display: block;
-  width: 106px;
-  height: 60px;
   margin: 0 auto;
 }
 /* =============== /Clients =============== */
