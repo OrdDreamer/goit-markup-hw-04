@@ -84,10 +84,7 @@ body {
 
 .social-list {
   display: flex;
-}
-
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .social-list-item-link {
