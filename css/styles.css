@@ -97,6 +97,7 @@ body {
   fill: var(--default-icon-color);
 }
 
+.social-list-item-link:focus,
 .social-list-item-link:hover {
   background-color: var(--accent-color);
   fill: #fff;
@@ -118,7 +119,6 @@ body {
 }
 
 .page-header {
-  padding: 24px 0;
   border-bottom: 1px solid #ececec;
 }
 
@@ -137,6 +137,7 @@ body {
 }
 
 .menu-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -175,6 +176,9 @@ body {
   color: var(--secondary-text-color-theme-light);
   fill: var(--secondary-text-color-theme-light);
   font-weight: 500;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-phone-number-theme-light:hover,
@@ -208,6 +212,8 @@ body {
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -402,6 +408,7 @@ body {
   fill: var(--default-icon-color);
 }
 
+.clients-item-link:focus,
 .clients-item-link:hover {
   border-color: var(--accent-color);
   fill: var(--accent-color);
@@ -543,8 +550,12 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-link {
+  display: block;
+}
+
+.portfolio-item-link:focus,
+.portfolio-item-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
